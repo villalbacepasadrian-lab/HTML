@@ -1,0 +1,66 @@
+header {
+    background-color: #6086c3;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+
+    text-align: center;
+    background-color: #1d437f;
+  
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    text-align: center;
+}
+
+thead {
+    background-color: #7ea126;
+    color: white;
+    font-size: 16px;
+}
+
+.fdh {
+    background-color: #9dac72;
+    font-size: 13px;
+}
+
+fieldset {
+    border: 2px solid #c5d084;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #b1b695;
+
+}
+
+body {
+    font-family: "arial", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+title {
+    text-align: center;
+    color: #38bab398;
+
+
+
+
+
+
+
+
+
+
+
+}

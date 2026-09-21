@@ -1,0 +1,22 @@
+header {
+	
+	background: darkslategray; /* fondo gris pizzarra oscuro*/
+	color: white;	/* texto blanco*/
+	padding: 20px 30px;	/* espacio interno 20 arriba/abajo 30 lados*/
+	display: flex; /* flexbox para colocar hijos en fila*/
+	align-items: center; /* centrado vertical de los hijos*/
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* fondo gris pizzarra oscuro*/
+	
+	
+	
+	
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: whitesmoke;
+	
+	
+}
+.PROG {background-color: red;}
+.SIST {background-color: pink;}
