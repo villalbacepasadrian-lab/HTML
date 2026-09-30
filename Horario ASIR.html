@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> <!-- invisible -->
+       <meta charset="UTF-8">
+       <meta name="viewport" content= "width=device-wdth, initial-scale=1.0">
+       <link rel="stylesheet" href="css/estilo mi tabla.css">
+       <title>Horario ASIR</title> <!-- lo que lee la gente, titulo de la pestaña -->
+    </head>
+    <body>
+        <header>
+            <h1>Horario ASIR</h1>
+                <nav>
+                    <a class="nav-link" href="index.html" target="_blank">Mi primera web</a>
+                    <a class="nav-link" href= "https://cifpvirgendegracia.com" target="_blank">CIFP Virgen de Gracia</a>
+                </nav>
+        </header>
+        <main><br>   
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>8:30-9:25</th>
+                        <td rowspan="2">IPE</td>
+                        <td><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=3586" target="_blank">Sostenibilidad</a></td>
+                        <td rowspan="2"><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=3985" target="_blank">LLMM</a></td>
+                        <td>Inglés</td>
+                        <td rowspan="2">Redes</td>
+                    </tr> 
+                    <tr>
+                        <th>9:25-10:20</th>
+                        <!-- celda cubierta por rowspan de IPE arriba-->
+                        <td>IPE</td>
+                        <!-- celda cubierta por rowspan de LLMM arriba-->
+                        <td rowspan="2"><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=4683" target="_blank">ISO</a></td>
+                        <!-- celda cubierta por rowspan de Redes arriba-->
+                    </tr>
+                    <tr>
+                        <th>10:20-11:15</th>
+                        <td>Redes</td>
+                        <td><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=5028" target="_blank">Gestión BBDD</a></td>
+                        <td>Redes</td>
+                        <!-- celda cubierta por rowspan de ISO arriba-->
+                        <td><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=3585" target="_blank">Fundamentos</a></td>
+                    </tr>      
+                    <th>11:15-11:45</th>
+                      <td colspan="5">RECREO</td>
+                                        <tr>
+                        <th>11:45-12:40</th>
+                        <td>Inglés</td>
+                        <td><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=5028" target="_blank">Gestión BBDD</a></td>
+                        <td>Redes</td>
+                        <td rowspan="2"><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=5028" target="_blank">Gestión BBDD</a></td>
+                        <td><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=3585" target="_blank">Fundamentos</a></td>
+
+                    </tr> 
+                    <tr>
+                        <th>12:40-13:35</th>
+                        <td rowspan="2"><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=4683" target="_blank">ISO</a></td>
+                        <td><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=4683" target="_blank">Proyecto</a></td>
+                        <td rowspan="2"><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=7177" target="_blank">Digitalización<a></td>
+                        <!-- celda cubierta por rowspan de BBDD arriba-->
+                        <td rowspan="2"><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=4683" target="_blank">ISO</a></td>
+                        
+                    </tr>
+                    <tr>
+                        <th>13:35-14:30</th>
+                        <!-- celda cubierta por rowspan de ISO arriba-->
+                        <td><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=3585" target="_blank">Fundamentos</a></td>
+                        <!-- celda cubierta por rowspan de Digitalización arriba-->
+                        <td><a href="https://aulasciclos2627.castillalamancha.es/course/view.php?id=3985" target="_blank">LLMM</a></td>
+                        <!-- celda cubierta por rowspan de ISO arriba-->
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+            <footer class="FOOTER">
+                <p>Realizado por Adrian Villalba</p>
+            </footer>
+    </body>
+</html>
