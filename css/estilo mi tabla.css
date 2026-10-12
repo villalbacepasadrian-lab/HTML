@@ -60,9 +60,9 @@ th, td {
 
 
 
-.PROG {background-color: crimson;}
-.SIST {background-color: orchid;}
-.BD {background-color: cyan;}
+.ISO {background-color: crimson;}
+.FUND {background-color: orchid;}
+.BD {background-color: rgb(140, 8, 228);}
 .IPE {background-color: tan;}
 .ING {background-color: peru;}
 .REC {
@@ -72,7 +72,7 @@ th, td {
 .DIG {background-color: MistyRose;}
 .LM {background-color: ForestGreen;}
 .SOST {background-color: lavender;}
-.ENT {background-color: coral;}
+.RED {background-color: rgb(8, 247, 195);}
 .FOOTER {font-family: Arial, sans-serif;}
 .nav-link {
 	color: yellow;
