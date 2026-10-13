@@ -4,11 +4,11 @@ header {
     text-align: center;
 }
 
-footer {
-
+.FOOTER{
+    background-color: darkslategray;
     text-align: center;
-    background-color: #1d437f;
-  
+    color: white ;
+	border-radius: 15px;
 }
 
 table {

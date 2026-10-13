@@ -11,7 +11,12 @@ header {
 	
 	
 }
-
+.FOOTER{
+    background-color: darkslategray;
+    text-align: center;
+    color: white ;
+	border-radius: 15px;
+}
 body {
 	font-family: Arial, sans-serif;
 	background: whitesmoke;
@@ -20,3 +25,4 @@ body {
 }
 .PROG {background-color: red;}
 .SIST {background-color: pink;}
+.FOOTER {font-family: Arial, sans-serif;}
