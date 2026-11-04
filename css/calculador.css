@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 32, 39, 0.6); /* Fondo semitransparente oscuro */
+  backdrop-filter: blur(8px); /* Efecto cristal borroso */
+  border-bottom: 1px solid rgba(127, 255, 212, 0.15); /* Línea sutil inferior */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+header h1 {
+  color: #7fffd4; /* Aquamarine brillante */
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(127, 255, 212, 0.3);
+}
+
+/* Contenedor de los enlaces */
+header nav {
+  display: flex;
+  gap: 20px; /* Espacio automático entre los dos enlaces */
+}
+
+/* Estilo para los enlaces con la clase .nav-link */
+header .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Efecto al pasar el ratón (hover) sobre los enlaces */
+header .nav-link:hover {
+  color: #0b131a;
+  background-color: #7fffd4; /* Fondo aquamarine al pasar el cursor */
+  box-shadow: 0 0 12px rgba(127, 255, 212, 0.6);
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+.tabla {
+  background: rgba(20, 30, 40, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 
+              0 0 20px rgba(127, 255, 212, 0.2);
+  border: 1px solid rgba(127, 255, 212, 0.3);
+  border-spacing: 10px; /* Espacio entre celdas de la tabla */
+}
+
+
+#pantalla {
+  width: 100%;
+  height: 70px;
+  background: #0b131a;
+  color: #7fffd4; 
+  font-size: 2.2rem;
+  text-align: right;
+  padding: 0 15px;
+  border: 2px solid rgba(127, 255, 212, 0.4);
+  border-radius: 12px;
+  outline: none;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+
+.tabla button {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(145deg, #1f3a48, #162b36);
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.tabla button:hover {
+  background: linear-gradient(145deg, #7fffd4, #48d1cc);
+  color: #0b131a;
+  box-shadow: 0 0 15px rgba(127, 255, 212, 0.6);
+  transform: translateY(-2px);
+}
+
+
+.tabla button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.tabla tr:last-child button {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(145deg, #ff4b5c, #d32f2f);
+  color: white;
+  font-size: 1.1rem;
+}
+
+.tabla tr:last-child button:hover {
+  background: linear-gradient(145deg, #ff6b7b, #f44336);
+  box-shadow: 0 0 15px rgba(255, 75, 92, 0.6);
+  color: white;
+
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  color: rgba(127, 255, 212, 0.75); /* Aquamarine suave */
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  background: rgba(15, 32, 39, 0.6); /* Fondo semitransparente oscuro */
+  backdrop-filter: blur(8px); /* Efecto cristal borroso */
+  border-top: 1px solid rgba(127, 255, 212, 0.15); /* Línea sutil superior */
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer a {
+  color: #7fffd4;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(127, 255, 212, 0.8);
+}

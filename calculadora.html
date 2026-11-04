@@ -1,44 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/calculador.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/script calculador.js"></script>
+    <link rel="stylesheet" href="css/calculador.css" />
+  </head>
+  <header>
+    <h1>Calculadora</h1>
+    <nav>
+      <a class="nav-link" href="index.html" target="_blank">Mi primera web</a>
+      <a class="nav-link" href="https://cifpvirgendegracia.com" target="_blank">CIFP Virgen de Gracia</a>
+    </nav>
+  </header>
+  <body>
     <table class="tabla">
-        <thead>
-            <input type="text" id="pantalla" value="0" readonly >
-        </thead> 
-        <tbody>
-            <tr>
-                <td><button onclick="escribir('7')">7</button></td>
-                <td><button onclick="escribir('8')">8</button></td>
-                <td><button onclick="escribir('9')">9</button></td>
-                <td><button onclick="escribir('/')">/</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="escribir('4')">4</button></td>
-                <td><button onclick="escribir('5')">5</button></td>
-                <td><button onclick="escribir('6')">6</button></td>
-                <td><button onclick="escribir('*')">*</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="escribir('1')">1</button></td>
-                <td><button onclick="escribir('2')">2</button></td>
-                <td><button onclick="escribir('3')">3</button></td>
-                <td><button onclick="escribir('-')">-</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="escribir('0')">0</button></td>
-                <td><button onclick="escribir('.')">.</button></td>
-                <td><button onclick="escribir('=')">=</button></td>
-                <td><button onclick="escribir('+')">+</button></td>
-            </tr>
-            <tr>
-                <td colspan="4"><button>Borrar</button></td>
-            </tr>
-        </tbody>
+      <thead>
+        <tr>
+          <td colspan="4">
+            <input type="text" id="pantalla" value="0" readonly />
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><button onclick="escribir('1')">1</button></td>
+          <td><button onclick="escribir('2')">2</button></td>
+          <td><button onclick="escribir('3')">3</button></td>
+          <td><button onclick="escribir('/')">/</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="escribir('4')">4</button></td>
+          <td><button onclick="escribir('5')">5</button></td>
+          <td><button onclick="escribir('6')">6</button></td>
+          <td><button onclick="escribir('*')">*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="escribir('7')">7</button></td>
+          <td><button onclick="escribir('8')">8</button></td>
+          <td><button onclick="escribir('9')">9</button></td>
+          <td><button onclick="escribir('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="escribir('0')">0</button></td>
+          <td><button onclick="escribir('.')">.</button></td>
+          <td><button onclick="escribir('=')">=</button></td>
+          <td><button onclick="escribir('+')">+</button></td>
+        </tr>
+        <tr>
+          <td colspan="4"><button onclick="borrar()">Borrar</button></td>
+        </tr>
+      </tbody>
     </table>
-</body>
+  </body>
+  <br />
+  <footer>
+    <p>Realizada por Adrián Villalba</p>
+  </footer>
 </html>

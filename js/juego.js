@@ -1,23 +1,31 @@
-function juego(jugador, maquina) {
+
+
+function juego(jugador) {
+  const opciones = ["piedra", "papel", "tijera"];
+  const maquina = opciones[Math.floor(Math.random() * opciones.length)];
+  let mensaje;
+
+
+
   if (jugador == maquina) {
-    console.log("¡Empate!");
-  } else if (
+    mensaje = "Empate";
+
+
+  }
+
+  else if (
     (jugador == "piedra" && maquina == "tijera") ||
     (jugador == "tijera" && maquina == "papel") ||
     (jugador == "papel" && maquina == "piedra")
   ) {
-    console.log("¡Winner!");
-  } else {
-    console.log("Loser!");
+    mensaje = "Ganas";
   }
+ else {
+  mensaje = "Pierdes";
+ }
+
+
+
+document.getElementById("mensaje").textContent = mensaje;
+
 }
-
-let jugador1 = "piedra";
-let maquina1 = "piedra";
-juego(jugador1, maquina1);
-
-let jugador2 = "papel";
-let maquina2 = "tijera";
-juego(jugador2, maquina2);
-
-juego("piedra", "tijera");

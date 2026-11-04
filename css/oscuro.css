@@ -1,0 +1,17 @@
+header, main {
+    color: #e0e0e0;
+    background-color: rgb(28, 33, 99) ;
+
+}
+
+footer{
+    background-color:rgb(49, 52, 104);
+}
+
+h1, h2, p{
+    color: white(39, 39, 14);
+}
+
+body {
+    background-color: black;
+}
