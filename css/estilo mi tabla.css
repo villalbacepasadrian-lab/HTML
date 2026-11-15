@@ -73,7 +73,31 @@ th, td {
 .LM {background-color: ForestGreen;}
 .SOST {background-color: lavender;}
 .RED {background-color: rgb(8, 247, 195);}
-.FOOTER {font-family: Arial, sans-serif;}
+.FOOTER {
+    margin-top: 50px;
+    padding: 20px;
+    background: linear-gradient(135deg, #2f4f4f 0%, #2b4f5c 50%, #1d437f 100%);
+    color: white;
+    text-align: center;
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(29, 67, 127, 0.3);
+}
+
+.FOOTER p {
+    margin: 4px 0;
+}
+
+.FOOTER p:first-child {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.FOOTER p:last-child {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+
 .nav-link {
 	color: yellow;
 	text-decoration: none;

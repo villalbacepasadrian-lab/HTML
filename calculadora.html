@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/script calculador.js"></script>
-    <link rel="stylesheet" href="css/calculador.css" />
+    <title>Calculadora</title>
+    <script src="js/script calculadora.js"></script>
+    <link rel="stylesheet" href="css/estilo calculadora.css" />
   </head>
-  <header>
-    <h1>Calculadora</h1>
-    <nav>
-      <a class="nav-link" href="index.html" target="_blank">Mi primera web</a>
-      <a class="nav-link" href="https://cifpvirgendegracia.com" target="_blank">CIFP Virgen de Gracia</a>
-    </nav>
-  </header>
   <body>
+    <header>
+      <h1>Calculadora</h1>
+      <nav>
+        <a class="nav-link" href="index.html">Mi primera web</a>
+        <a class="nav-link" href="https://cifpvirgendegracia.com" target="_blank">CIFP Virgen de Gracia</a>
+      </nav>
+    </header>
+
     <table class="tabla">
       <thead>
         <tr>
@@ -44,7 +46,7 @@
         <tr>
           <td><button onclick="escribir('0')">0</button></td>
           <td><button onclick="escribir('.')">.</button></td>
-          <td><button onclick="escribir('=')">=</button></td>
+          <td><button onclick="calcular()">=</button></td>
           <td><button onclick="escribir('+')">+</button></td>
         </tr>
         <tr>
@@ -52,9 +54,10 @@
         </tr>
       </tbody>
     </table>
+
+		<footer class="FOOTER">
+        <p>CIFP Virgen de Gracia</p>
+        <p>Realizado por Adrian Villalba</p>
+		</footer>
   </body>
-  <br />
-  <footer>
-    <p>Realizada por Adrián Villalba</p>
-  </footer>
 </html>
