@@ -4,18 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piedra, Papel o Tijera</title>
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilo juego.css" />
   </head>
   <body>
-    <h1>Piedra, Papel o Tijera</h1>
+    <header>
+      <h1>Piedra, Papel o Tijera</h1>
+        <nav>
+          <a class="nav-link" href="index.html" target="_blank">Inicio</a>
+          <a class="nav-link" href= "https://cifpvirgendegracia.com" target="_blank">CIFP Virgen de Gracia</a>
+        </nav>
+    </header>
     <div class="opciones">
       <button onclick="juego('piedra')">Piedra</button>
       <button onclick="juego('papel')">Papel</button>
       <button onclick="juego('tijera')">Tijera</button>
     </div>
-    <p id="resultado"></p>
+    <div class="marcador">
+      <p id="marcador">Partidas jugadas: 0</p>
+      <p id="ganadas">Ganadas: 0</p>
+      <p id="empatadas">Empates: 0</p>
+      <p id="perdidas">Derrotas: 0</p>
+    </div>
+    <div class="resultados">
+      <p id="jugada-jugador">Tu jugada: -</p>
+      <p id="jugada-maquina">Jugada de la máquina: -</p>
+       <p id="mensaje">Elige una jugada</p>
+    </div>
 
     <script src="js/juego.js"></script>
   </body>
-  <footer></footer>
+		<footer class="FOOTER">
+      <p>CIFP Virgen de Gracia</p>
+      <p>Realizado por Adrian Villalba</p>
+		</footer>
+
 </html>

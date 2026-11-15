@@ -1,0 +1,170 @@
+:root {
+  --fondo: #f4f5f7;
+  --tarjeta: #ffffff;
+  --texto: #1f2937;
+  --texto-suave: #6b7280;
+  --principal: #4f46e5;
+  --principal-oscuro: #4338ca;
+  --borde: #e5e7eb;
+  --ganar: #16a34a;
+  --empate: #d97706;
+  --perder: #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+/* Botones */
+.opciones {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+button {
+  flex: 1;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: var(--principal);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: var(--principal-oscuro);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Marcador */
+.marcador {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.marcador p {
+  margin: 0;
+  padding: 12px 8px;
+  background-color: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+#marcador {
+  grid-column: 1 / -1;
+  color: var(--texto-suave);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+#ganadas {
+  color: var(--ganar);
+}
+
+#empatadas {
+  color: var(--empate);
+}
+
+#perdidas {
+  color: var(--perder);
+}
+
+/* Resultado */
+.resultados {
+  background-color: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.resultados p {
+  margin: 6px 0;
+  color: var(--texto-suave);
+}
+
+#mensaje {
+  margin-top: 16px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--texto);
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: var(--texto-suave);}
+
+header {
+  text-align: center;
+  background: darkslategray;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 25px;
+}
+
+/* Menú de navegación */
+nav {
+  display: flex;
+  flex-wrap: wrap;          /* si no caben, pasan a otra línea */
+  justify-content: center;
+  gap: 10px;                /* separación entre enlaces */
+}
+
+/* Enlaces del menú (sobrescriben el estilo general de "a") */
+.nav-link {
+  margin-right: 0;          /* el gap ya separa los enlaces */
+  padding: 8px 16px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  font-weight: normal;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: darkslategray;
+}
+
+.FOOTER{
+    background-color: darkslategray;
+    text-align: center;
+    color: white ;
+	border-radius: 15px;
+}
